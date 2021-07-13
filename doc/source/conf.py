@@ -34,7 +34,6 @@ release = '07-2021'
 # ones.
 extensions = [
     'sphinx_rtd_theme',
-    'insegel',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
