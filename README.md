@@ -165,15 +165,15 @@ Cabin information has the most missing information, with more than 77%. Afterwar
 
  Using Pandas .describe() method and plotting a histogram, we will have an overview of the distribution of each variable and possible outliers and missing values. This will be useful in the next step when we will work on cleaning the data, deciding whether to delete an entry that has a missing value or fill in with the mean/median, for example.
 
-![_2](./doc/source/images/_2.png)
-![_3](./doc/source/images/_3.png)
+![_2](./doc/source/images/_2_.png)
+![_3](./doc/source/images/_3_.png)
 
 
 ### Which groups of people were most likely to survive?
 
 From here, we can already test a hypothesis mentioned at the beginning: are women, in fact, more likely to survive the sinking of the Titanic? It is worth looking at the correlations and relationships between the variables, whether to decide which ones will go into a future model or to formulate new hypotheses.
 
-![_4](./doc/source/images/_4.png)
+![_4](./doc/source/images/_4_.png)
 
 
 From the chart above, we have already been able to confirm two initial assumptions:
@@ -182,21 +182,21 @@ From the chart above, we have already been able to confirm two initial assumptio
 
 * Passengers in 3rd Class have less than half the chance of escaping disaster than passengers in 1st Class.
 
-![_5](./doc/source/images/_5.png)
+![_5](./doc/source/images/_5_.png)
 
 Looking also at the age distribution of survivors and dead, we can see a peak on the survivors side for young children. The behavior of the two graphics is very similar, but this detail is very important, as it confirms the hypothesis that children also have a greater chance of surviving: *“Children and women first!”.*
 
 We can take advantage of an interesting type of graphic from Pandas, the scatter_matrix.
 
-![_6](./doc/source/images/_6.png)
+![_6](./doc/source/images/_6_.png)
 
 We can see that the advantage of using this graph is that we get a very useful information of its diagonal, which displays a histogram of each attribute. So we can see things like, for example, the fact that older people are more concentrated in first grade and younger people are more concentrated in third grade. Finally, finishing this first exploratory analysis step, we can analyze the heatmap to understand how the variables are correlated, positively or negatively.
 
-![_7](./doc/source/images/_7.png)
+![_7](./doc/source/images/_7_.png)
 
 Another interesting thing is that the df.describe() method can also be used to visualize something about descriptive statistics in columns that are not numbers. To do this, just pass the include=[‘O’] argument.
 
-![_8](./doc/source/images/_8.png)
+![_8](./doc/source/images/_8_.png)
 
 From these data, we can note that:
 
@@ -226,7 +226,7 @@ We import the data into DataFrame structures, formulate hypotheses, initiate an 
  
 As we are preparing data for an ML model, it is a good idea to merge the training and test datasets into a single one, to separate again at the end, to ensure that the data will follow the same structure when we do feature engineering, so we will train the model on top of this architecture .
 
-![_9](./doc/source/images/_9.png)
+![_9](./doc/source/images/_9_.png)
 
 ### Selecting features
 
@@ -238,7 +238,7 @@ As with any real world dataset, we will always come across data that won’t do 
 
 because apparently they don’t seem relevant.
 
-![_10](./doc/source/images/_10.png)
+![_10](./doc/source/images/_10_.png)
 
 Thus, we are left with the following variables to be treated and prepared:
 
@@ -256,11 +256,11 @@ We’ll now take a look at the missing values ​​in each column and let’s t
 
 In order not to throw out information from an entire line just because of a missing field, we can fill the field.
 
-![_11](./doc/source/images/_11.png)
+![_11](./doc/source/images/_11_.png)
 
 For the age and rate variables, we placed the median value; and for the port of shipment variable, we put the value more frequently.
 
-![_12](./doc/source/images/_12.png)
+![_12](./doc/source/images/_12_.png)
 
 ### Preparing the variables to modeling
 
@@ -268,13 +268,13 @@ We will need to work with numeric variables, so we will transform input data tha
 
 We can convert possible values ​​of Sex to {‘male’:0, ‘female’:1}. Regarding the Embarked variable, we can apply the concept of dummy variables.
 
-![_13](./doc/source/images/_13.png)
+![_13](./doc/source/images/_13_.png)
 
 ### Retrieving training and testing datasets
 
 We prepare the dataset for the model and let’s divide df_merged into train and test, as it was in the beginning.
 
-![_14](./doc/source/images/_14.png)
+![_14](./doc/source/images/_14_.png)
 
 #
 
@@ -282,8 +282,8 @@ We prepare the dataset for the model and let’s divide df_merged into train and
 
 ### Regression and Logistics Model
 
-![_15](./doc/source/images/_15.png)
-![_16](./doc/source/images/_16.png)
+![_15](./doc/source/images/_15_.png)
+![_16](./doc/source/images/_16_.png)
 
 **With practically two lines, we built a Logistic Regression model with 80% accuracy of the training dataset.** 
 
@@ -291,11 +291,11 @@ The .fit() method optimizes the objective function of the problem and stores the
 
 We can predict the test dataset with the .predict() method.
 
-![_17](./doc/source/images/_17.png)
+![_17](./doc/source/images/_17_.png)
 
 I took the opportunity and submitted the csv file to Kaggle to compare the performance:
 
-![_18](./doc/source/images/_18.png)
+![_18](./doc/source/images/_18_.png)
 
 The model managed to achieve a score of 75%. From what I’ve been studying, it’s not uncommon for us to underperform when submitting predictions, as our model was trained 100% on top of the training set, which means it has a better fit to the dataset train.
 
@@ -305,13 +305,13 @@ The model managed to achieve a score of 75%. From what I’ve been studying, it�
 
 Now, we create a Decision Tree model, find the curve (fit) on top of the training data and check the accuracy. There was a gain in accuracy reaching almost 83%.
 
-![_19](./doc/source/images/_19.png)
+![_19](./doc/source/images/_19_.png)
 
 Likewise, I trained the model, performing the prediction and, after that, I submitted the cvs to Kaggle.
 
 
-![_20](./doc/source/images/_20.png)
-![_21](./doc/source/images/_21.png)
+![_20](./doc/source/images/_20_.png)
+![_21](./doc/source/images/_21_.png)
 
 Well, we improved our performance on top of the test suite, achieving a score of approximately 78%.
 
@@ -327,7 +327,7 @@ Since the model is already trained and with good accuracy, I thought it might be
 
 Let’s then create five models containing the values ​​of each variable and pass them as arguments to the predict() method.
 
-![_22](./doc/source/images/_22.png)
+![_22](./doc/source/images/_22_.png)
 
 Unfortunately, according to my own model, I wouldn’t have survived the Titanic disaster, not even my parents and uncle. My aunts were classified as survivors. It seems that the reality portrayed in the James Cameron film has some truths.
 

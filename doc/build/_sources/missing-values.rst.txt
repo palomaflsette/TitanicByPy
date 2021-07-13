@@ -10,13 +10,13 @@ We'll now take a look at the missing values ​​in each column and let's treat
 
 In order not to throw out information from an entire line just because of a missing field, we can fill the field.
 
-.. image:: images/_11.png
+.. image:: images/_11_.png
     :width: 600
     :alt: Alternative text
 
 
 For the age and rate variables, we placed the median value; and for the port of shipment variable, we put the value more frequently.
 
-.. image:: images/_12.png
+.. image:: images/_12_.png
     :width: 600
     :alt: Alternative text

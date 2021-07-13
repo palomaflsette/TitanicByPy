@@ -2,11 +2,11 @@
 Regression and Logistics Model
 ===============================
 
-.. image:: images/_15.png
+.. image:: images/_15_.png
     :width: 600
     :alt: Alternative text
 
-.. image:: images/_16.png
+.. image:: images/_16_.png
     :width: 600
     :alt: Alternative text
 
@@ -16,14 +16,14 @@ The *.fit()* method optimizes the objective function of the problem and stores t
 
 We can predict the test dataset with the .predict() method.
 
-.. image:: images/_17.png
+.. image:: images/_17_.png
     :width: 600
     :alt: Alternative text
 
 
 I took the opportunity and submitted the csv file to Kaggle to compare the performance:
 
-.. image:: images/_18.png
+.. image:: images/_18_.png
     :width: 700
     :alt: Alternative text
 

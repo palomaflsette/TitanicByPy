@@ -6,6 +6,6 @@ We will need to work with numeric variables, so we will transform input data tha
 
 We can convert possible values ​​of Sex to {‘male’:0, ‘female’:1}. Regarding the Embarked variable, we can apply the concept of dummy variables.
 
-.. image:: images/_13.png
+.. image:: images/_13_.png
     :width: 600
     :alt: Alternative text

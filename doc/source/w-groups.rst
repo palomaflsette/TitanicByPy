@@ -5,7 +5,7 @@ Which groups of people were most likely to survive?
 From here, we can already test a hypothesis mentioned at the beginning: are women, in fact, more likely to survive the sinking of the Titanic? It is worth looking at the correlations and relationships between the variables, whether to decide which ones will go into a future model or to formulate new hypotheses.
 
 
-.. image:: images/_4.png
+.. image:: images/_4_.png
     :width: 600
     :alt: Alternative text
 
@@ -15,7 +15,7 @@ From the chart above, we have already been able to confirm two initial assumptio
 * Women are much more likely to survive than men (75% vs. 18%);
 * Passengers in 3rd Class have less than half the chance of escaping disaster than passengers in 1st Class.
 
-.. image:: images/_5.png
+.. image:: images/_5_.png
     :width: 600
     :alt: Alternative text
 
@@ -24,7 +24,7 @@ Looking also at the age distribution of survivors and dead, we can see a peak on
 
 We can take advantage of an interesting type of graphic from Pandas, the scatter_matrix.
 
-.. image:: images/_6.png
+.. image:: images/_6_.png
     :width: 600
     :alt: Alternative text
 
@@ -32,14 +32,14 @@ We can take advantage of an interesting type of graphic from Pandas, the scatter
 We can see that the advantage of using this graph is that we get a very useful information of its diagonal, which displays a histogram of each attribute. So we can see things like, for example, the fact that older people are more concentrated in first grade and younger people are more concentrated in third grade. Finally, finishing this first exploratory analysis step, we can analyze the heatmap to understand how the variables are correlated, positively or negatively.
 
 
-.. image:: images/_7.png
+.. image:: images/_7_.png
     :width: 600
     :alt: Alternative text
 
 
 Another interesting thing is that the df.describe() method can also be used to visualize something about descriptive statistics in columns that are not numbers. To do this, just pass the include=[‘O’] argument.
 
-.. image:: images/_8.png
+.. image:: images/_8_.png
     :width: 600
     :alt: Alternative text
 

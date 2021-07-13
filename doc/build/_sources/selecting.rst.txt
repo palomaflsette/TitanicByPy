@@ -8,7 +8,7 @@ As with any real world dataset, we will always come across data that won't do an
 
 because apparently they don't seem relevant.
 
-.. image:: images/_10.png
+.. image:: images/_10_.png
     :width: 600
     :alt: Alternative text
 
