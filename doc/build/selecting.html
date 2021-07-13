@@ -90,7 +90,7 @@
             
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="about.html">About the problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="checklist.html">Checklist</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="checklist.html#problem-definition">Problem Definition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="checklist.html#obtaining-the-data">Obtaining the Data</a></li>
@@ -99,7 +99,7 @@
 <li class="toctree-l3"><a class="reference internal" href="get-together.html">Joining the training and test datasets</a></li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Selecting features</a></li>
 <li class="toctree-l3"><a class="reference internal" href="missing-values.html">Missing Values</a></li>
-<li class="toctree-l3"><a class="reference internal" href="prep-to-model.html">Preparing the variables for model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="prep-to-model.html">Preparing the variables to modeling</a></li>
 <li class="toctree-l3"><a class="reference internal" href="recover-dataset.html">Retrieving training and testing datasets</a></li>
 </ul>
 </li>
@@ -178,6 +178,12 @@
             
   <div class="section" id="selecting-features">
 <h1>Selecting features<a class="headerlink" href="#selecting-features" title="Permalink to this headline">¶</a></h1>
+<p>As with any real world dataset, we will always come across data that won’t do any good and others that won’t be very significant in the model. We will have to choose which features will be used for the ML model we are going to develop. In this case, let’s consider the variables</p>
+<p><em>[‘PassengerId’, ‘Name’, ‘Ticket’, ‘Cabin’]</em></p>
+<p>because apparently they don’t seem relevant.</p>
+<a class="reference internal image-reference" href="_images/_10.png"><img alt="Alternative text" src="_images/_10.png" style="width: 700px;" /></a>
+<p>Thus, we are left with the following variables to be treated and prepared:</p>
+<p><em>[‘Pclass’, ‘Sex’, ‘Age’, ‘SibSp’, ‘Parch’, ‘Fare’, ‘Embarked’]</em>.</p>
 </div>
 
 

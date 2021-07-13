@@ -1,5 +1,6 @@
+***********
 Checklist
-==========
+***********
 
 It is convenient that we follow a framework, a flowchart or at least a checklist with some essential steps for a good analysis, like every Data Science project.
 For this project, we will follow the steps below:
@@ -21,7 +22,7 @@ For this project, we will follow the steps below:
 We want to break a problem into well-defined steps, making our analysis more robust.
 Our aim is basically to use available data to measure the probability of survival of passengers on the Titanic.
 
-==========================
+
 Problem Definition
 ==========================
 
@@ -33,11 +34,18 @@ The shipwreck had as contributing factors natural causes, such as the climate, a
 
 Although the people who managed to survive were very lucky, some groups of people were more likely to escape death than others. For example, women, children and first class passengers. So, we can see that there is some pattern that can be extracted from the raw data.
 
-.. toctree::
-    Objective
-    performance-metrics
 
-===================
+* **Objective**
+
+  * We hope to get an **analysis of which variables had the greatest influence on the probability of survival** (i.e. what type of person was most likely to escape in life).
+
+  * After **analyzing the data**, we will build a model that gives the survival prediction for any passenger provided as an input value.
+
+* **Performance Metrics**
+  
+  * Model **accuracy** is an important factor, since reliability is directly proportional to the number of correct predictions the model makes.
+
+
 Obtaining the Data
 ===================
 
@@ -51,7 +59,7 @@ It comprises several features, such as passenger gender and boarding class.
 
 It should be used as data never seen by the model. In this dataset, it is not informed whether the passenger survived or not.
 
-=================
+
 Data Exploration
 =================
 
@@ -120,7 +128,7 @@ Cabin information has the most missing information, with more than 77%. Afterwar
     dist-estatistic
     w-groups
 
-=================
+
 Data Preparation
 =================
 
@@ -137,15 +145,15 @@ We import the data into DataFrame structures, formulate hypotheses, initiate an 
     prep-to-model
     recover-dataset
 
-=========
-Modeling
-=========
+
+Data Modeling
+==============
 
 .. toctree::
     regression-model
     tree-dec-model
 
-===========
+
 Assessment
 ===========
 

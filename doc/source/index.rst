@@ -6,7 +6,7 @@
 Welcome to TitanicByPy's documentation!
 =======================================
 
-.. important::
+.. note::
    This documentation was generated on Jul 12, 2021.
   
 .. toctree::

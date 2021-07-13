@@ -42,8 +42,8 @@
     <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Objective" href="Objective.html" />
-    <link rel="prev" title="About the problem" href="about.html" /> 
+    <link rel="next" title="Statistical distribution of data" href="dist-estatistic.html" />
+    <link rel="prev" title="About" href="about.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -90,13 +90,9 @@
             
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="about.html">About the problem</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Checklist</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#problem-definition">Problem Definition</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="Objective.html">Objective</a></li>
-<li class="toctree-l3"><a class="reference internal" href="performance-metrics.html">Performance Metrics</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#problem-definition">Problem Definition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#obtaining-the-data">Obtaining the Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-exploration">Data Exploration</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="dist-estatistic.html">Statistical distribution of data</a></li>
@@ -111,7 +107,7 @@
 <li class="toctree-l3"><a class="reference internal" href="recover-dataset.html">Retrieving training and testing datasets</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#modeling">Modeling</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-modeling">Data Modeling</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="regression-model.html">Regression and Logistics Model</a></li>
 <li class="toctree-l3"><a class="reference internal" href="tree-dec-model.html">Decision Tree Model</a></li>
 </ul>
@@ -207,12 +203,19 @@ Our aim is basically to use available data to measure the probability of surviva
 <p>The ship, designed to be the safest and most luxurious of the time, was launched in 1911, gaining a reputation for being “unsinkable”.</p>
 <p>The shipwreck had as contributing factors natural causes, such as the climate, and human causes (neglect and overconfidence). Regardless of the causes, the fact is that its shipwreck killed 1502 people out of a total of 2224 passengers.</p>
 <p>Although the people who managed to survive were very lucky, some groups of people were more likely to escape death than others. For example, women, children and first class passengers. So, we can see that there is some pattern that can be extracted from the raw data.</p>
-<div class="toctree-wrapper compound">
+<ul class="simple">
+<li><p><strong>Objective</strong></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="Objective.html">Objective</a></li>
-<li class="toctree-l1"><a class="reference internal" href="performance-metrics.html">Performance Metrics</a></li>
+<li><p>We hope to get an <strong>analysis of which variables had the greatest influence on the probability of survival</strong> (i.e. what type of person was most likely to escape in life).</p></li>
+<li><p>After <strong>analyzing the data</strong>, we will build a model that gives the survival prediction for any passenger provided as an input value.</p></li>
 </ul>
-</div>
+</li>
+<li><p><strong>Performance Metrics</strong></p>
+<ul>
+<li><p>Model <strong>accuracy</strong> is an important factor, since reliability is directly proportional to the number of correct predictions the model makes.</p></li>
+</ul>
+</li>
+</ul>
 </div>
 <div class="section" id="obtaining-the-data">
 <h2>Obtaining the Data<a class="headerlink" href="#obtaining-the-data" title="Permalink to this headline">¶</a></h2>
@@ -304,8 +307,8 @@ It comprises several features, such as passenger gender and boarding class.</p>
 </ul>
 </div>
 </div>
-<div class="section" id="modeling">
-<h2>Modeling<a class="headerlink" href="#modeling" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-modeling">
+<h2>Data Modeling<a class="headerlink" href="#data-modeling" title="Permalink to this headline">¶</a></h2>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="regression-model.html">Regression and Logistics Model</a></li>
@@ -329,8 +332,8 @@ It comprises several features, such as passenger gender and boarding class.</p>
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="Objective.html" class="btn btn-neutral float-right" title="Objective" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="about.html" class="btn btn-neutral float-left" title="About the problem" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dist-estatistic.html" class="btn btn-neutral float-right" title="Statistical distribution of data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="about.html" class="btn btn-neutral float-left" title="About" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>
