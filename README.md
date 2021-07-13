@@ -23,4 +23,4 @@ Attention to requires for the project.
 
  ## Investigating the Wreck of the RMS Titanic
 
- ![titanic](./images/titanic.jpg)
+ ![titanic](/images/titanic.jpg)
