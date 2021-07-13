@@ -6,19 +6,12 @@
 Welcome to TitanicByPy's documentation!
 =======================================
 
-Contents:
-
+.. important::
+   This documentation was generated on Jul 12, 2021.
+  
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents:           
 
    about
-
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   checklist

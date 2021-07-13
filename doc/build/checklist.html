@@ -1,0 +1,374 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Checklist &mdash; TitanicByPy 07-2021 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Objective" href="Objective.html" />
+    <link rel="prev" title="About the problem" href="about.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> TitanicByPy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About the problem</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Checklist</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#problem-definition">Problem Definition</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Objective.html">Objective</a></li>
+<li class="toctree-l3"><a class="reference internal" href="performance-metrics.html">Performance Metrics</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#obtaining-the-data">Obtaining the Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-exploration">Data Exploration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="dist-estatistic.html">Statistical distribution of data</a></li>
+<li class="toctree-l3"><a class="reference internal" href="w-groups.html">Which groups of people were most likely to survive?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#data-preparation">Data Preparation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="get-together.html">Joining the training and test datasets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="selecting.html">Selecting features</a></li>
+<li class="toctree-l3"><a class="reference internal" href="missing-values.html">Missing Values</a></li>
+<li class="toctree-l3"><a class="reference internal" href="prep-to-model.html">Preparing the variables to modeling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="recover-dataset.html">Retrieving training and testing datasets</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modeling">Modeling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="regression-model.html">Regression and Logistics Model</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tree-dec-model.html">Decision Tree Model</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#assessment">Assessment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="assessment.html">Would I survive the sinking?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TitanicByPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>Checklist</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/checklist.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="checklist">
+<h1>Checklist<a class="headerlink" href="#checklist" title="Permalink to this headline">¶</a></h1>
+<p>It is convenient that we follow a framework, a flowchart or at least a checklist with some essential steps for a good analysis, like every Data Science project.
+For this project, we will follow the steps below:</p>
+<p><strong>1. Problem Definition</strong></p>
+<p><strong>2. Obtaining the Data</strong></p>
+<p><strong>3. Data Exploration</strong></p>
+<p><strong>4. Data Preparation</strong></p>
+<p><strong>5. Modeling</strong></p>
+<p><strong>6. Assessment</strong></p>
+<p>We want to break a problem into well-defined steps, making our analysis more robust.
+Our aim is basically to use available data to measure the probability of survival of passengers on the Titanic.</p>
+<div class="section" id="problem-definition">
+<h2>Problem Definition<a class="headerlink" href="#problem-definition" title="Permalink to this headline">¶</a></h2>
+<p>At this initial stage, we want to analyze and fully understand the problem. For this, we should reflect on the construction of the Titanic, which took about 2 years and cost 7.5 million dollars (values ​​at the time). At 269 meters long, 28 meters wide and 53 meters high, it operated with a crew of 892 people and could carry up to 2435 passengers (spread across the three available classes).</p>
+<p>The ship, designed to be the safest and most luxurious of the time, was launched in 1911, gaining a reputation for being “unsinkable”.</p>
+<p>The shipwreck had as contributing factors natural causes, such as the climate, and human causes (neglect and overconfidence). Regardless of the causes, the fact is that its shipwreck killed 1502 people out of a total of 2224 passengers.</p>
+<p>Although the people who managed to survive were very lucky, some groups of people were more likely to escape death than others. For example, women, children and first class passengers. So, we can see that there is some pattern that can be extracted from the raw data.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Objective.html">Objective</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance-metrics.html">Performance Metrics</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="obtaining-the-data">
+<h2>Obtaining the Data<a class="headerlink" href="#obtaining-the-data" title="Permalink to this headline">¶</a></h2>
+<p><strong>&gt;&gt; Training Dataset (train.csv)</strong></p>
+<p>Used to build the Machine Learning model. In this dataset, it is informed whether the passenger survived or not.
+It comprises several features, such as passenger gender and boarding class.</p>
+<p><strong>&gt;&gt; Test Dataset (test.csv)</strong></p>
+<p>It should be used as data never seen by the model. In this dataset, it is not informed whether the passenger survived or not.</p>
+</div>
+<div class="section" id="data-exploration">
+<h2>Data Exploration<a class="headerlink" href="#data-exploration" title="Permalink to this headline">¶</a></h2>
+<p>The most important step in the project. Here, we will take most of our time. Often, initial questions and hypotheses can only be answered with a well-done exploratory analysis. If it is necessary to build a model, its performance will be directly linked to the quality of this analysis. In this step, we will:</p>
+<ul class="simple">
+<li><p>Study each attribute and its characteristics, such as:</p>
+<ul>
+<li><p>Name;</p></li>
+<li><p>Type (numeric, categorical, float, int, etc);</p></li>
+<li><p>% of missing values ​​for each column;</p></li>
+<li><p>Presence of noise or outliers;</p></li>
+<li><p>Distribution type (Gaussian, uniform, logarithmic).</p></li>
+</ul>
+</li>
+<li><p>Identify the target variable</p></li>
+<li><p>Identify correlations;</p></li>
+<li><p>View data graphically;</p></li>
+</ul>
+<p>As we are dealing with Supervised Learning, the Survived variable is easily identified as our target variable. Of great importance, let’s build a data dictionary, to know exactly what each column means.</p>
+<p><strong>Data dictionary</strong></p>
+<ul class="simple">
+<li><p>PassengerId: Passenger identification number</p></li>
+<li><p>Survived: Informs whether the passenger survived the disaster</p>
+<ul>
+<li><p>0 = No</p></li>
+<li><p>1 = Yes</p></li>
+</ul>
+</li>
+<li><p>Pclass: Ticket Class:</p>
+<ul>
+<li><p>1 = 1st Class</p></li>
+<li><p>2 = 2nd Class</p></li>
+<li><p>3 = 3rd Class</p></li>
+</ul>
+</li>
+<li><p>Name: Passenger Name</p></li>
+<li><p>Sex: Gender of the passenger</p></li>
+<li><p>Age: Age of passenger</p></li>
+<li><p>SibSp: Number of spouses and siblings on board</p></li>
+<li><p>Parch: Number of parents and children on board</p></li>
+<li><p>Ticket: Ticket number</p></li>
+<li><p>Fare: Ticket Price</p></li>
+<li><p>Cabin: Passenger cabin number</p></li>
+<li><p>Embarked: Port at which the passenger boarded:</p>
+<ul>
+<li><p>C = Cherbourg</p></li>
+<li><p>Q = Queenstown</p></li>
+<li><p>S = Southampton</p></li>
+</ul>
+</li>
+</ul>
+<p>Once this is done, we can ask some <strong>questions to formulate hypotheses</strong>:</p>
+<ul class="simple">
+<li><p><strong>What types of each variable?</strong></p></li>
+</ul>
+<p>We already know what each column represents, so let’s take a look at the first entries and see which variables are numeric and which are categorical.</p>
+<ul class="simple">
+<li><p><strong>What percentage of missing values?</strong></p></li>
+</ul>
+<p>Cabin information has the most missing information, with more than 77%. Afterwards, the Age column has no value in almost 20% of passengers. Finally, the column informing the Port of Embarkation (Embarked) has only 2% of missing information.</p>
+<a class="reference internal image-reference" href="_images/_1_.png"><img alt="Alternative text" src="_images/_1_.png" style="width: 900px;" /></a>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="dist-estatistic.html">Statistical distribution of data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="w-groups.html">Which groups of people were most likely to survive?</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="data-preparation">
+<h2>Data Preparation<a class="headerlink" href="#data-preparation" title="Permalink to this headline">¶</a></h2>
+<p>We will work on categorical variables, cleaning up data and handling missing information, and start preparing our predictive model, where we will first test Logistic Regression techniques.</p>
+<p>From now on, we will start to build a feature engineering segmentation, that is, we will process the data to make it ready for our Machine Learning models: Logistic Regression and Decision Tree.</p>
+<p>We import the data into DataFrame structures, formulate hypotheses, initiate an exploratory data analysis and visualize graphs and correlations between those variables that we deem relevant.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="get-together.html">Joining the training and test datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="selecting.html">Selecting features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="missing-values.html">Missing Values</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prep-to-model.html">Preparing the variables to modeling</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recover-dataset.html">Retrieving training and testing datasets</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="modeling">
+<h2>Modeling<a class="headerlink" href="#modeling" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="regression-model.html">Regression and Logistics Model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tree-dec-model.html">Decision Tree Model</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="assessment">
+<h2>Assessment<a class="headerlink" href="#assessment" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="assessment.html">Would I survive the sinking?</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="Objective.html" class="btn btn-neutral float-right" title="Objective" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="about.html" class="btn btn-neutral float-left" title="About the problem" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Paloma Sette.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

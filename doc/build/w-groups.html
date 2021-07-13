@@ -1,0 +1,252 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Which groups of people were most likely to survive? &mdash; TitanicByPy 07-2021 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Joining the training and test datasets" href="get-together.html" />
+    <link rel="prev" title="Statistical distribution of data" href="dist-estatistic.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> TitanicByPy
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About the problem</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="checklist.html">Checklist</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="checklist.html#problem-definition">Problem Definition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checklist.html#obtaining-the-data">Obtaining the Data</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="checklist.html#data-exploration">Data Exploration</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="dist-estatistic.html">Statistical distribution of data</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Which groups of people were most likely to survive?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="checklist.html#data-preparation">Data Preparation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checklist.html#modeling">Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checklist.html#assessment">Assessment</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">TitanicByPy</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="checklist.html">Checklist</a> &raquo;</li>
+        
+      <li>Which groups of people were most likely to survive?</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/w-groups.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="which-groups-of-people-were-most-likely-to-survive">
+<h1>Which groups of people were most likely to survive?<a class="headerlink" href="#which-groups-of-people-were-most-likely-to-survive" title="Permalink to this headline">¶</a></h1>
+<p>From here, we can already test a hypothesis mentioned at the beginning: are women, in fact, more likely to survive the sinking of the Titanic? It is worth looking at the correlations and relationships between the variables, whether to decide which ones will go into a future model or to formulate new hypotheses.</p>
+<a class="reference internal image-reference" href="_images/_4.png"><img alt="Alternative text" src="_images/_4.png" style="width: 700px;" /></a>
+<p>From the chart above, we have already been able to confirm two initial assumptions:</p>
+<ul class="simple">
+<li><p>Women are much more likely to survive than men (75% vs. 18%);</p></li>
+<li><p>Passengers in 3rd Class have less than half the chance of escaping disaster than passengers in 1st Class.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/_5.png"><img alt="Alternative text" src="_images/_5.png" style="width: 700px;" /></a>
+<p>Looking also at the age distribution of survivors and dead, we can see a peak on the survivors side for young children. The behavior of the two graphics is very similar, but this detail is very important, as it confirms the hypothesis that children also have a greater chance of surviving: <em>“Children and women first!”</em>.</p>
+<p>We can take advantage of an interesting type of graphic from Pandas, the scatter_matrix.</p>
+<a class="reference internal image-reference" href="_images/_6.png"><img alt="Alternative text" src="_images/_6.png" style="width: 700px;" /></a>
+<p>We can see that the advantage of using this graph is that we get a very useful information of its diagonal, which displays a histogram of each attribute. So we can see things like, for example, the fact that older people are more concentrated in first grade and younger people are more concentrated in third grade. Finally, finishing this first exploratory analysis step, we can analyze the heatmap to understand how the variables are correlated, positively or negatively.</p>
+<a class="reference internal image-reference" href="_images/_7.png"><img alt="Alternative text" src="_images/_7.png" style="width: 700px;" /></a>
+<p>Another interesting thing is that the df.describe() method can also be used to visualize something about descriptive statistics in columns that are not numbers. To do this, just pass the include=[‘O’] argument.</p>
+<a class="reference internal image-reference" href="_images/_8.png"><img alt="Alternative text" src="_images/_8.png" style="width: 600px;" /></a>
+<p>From these data, we can note that:</p>
+<ul class="simple">
+<li><p>Values ​​for Name are unique, one for each person;</p></li>
+<li><p>There are no missing values ​​for Name and Sex;</p></li>
+<li><p>There are only male and female genders, with a higher frequency of males (577/891 = 65%);</p></li>
+<li><p>The port in which the most passengers boarded is S = Southampton.</p></li>
+</ul>
+<p>In this first step, we were able to become aware of the situation, understanding the problem, the main variables and starting to visualize the numerical variables.</p>
+<p>Next, we will analyze the categorical variables in more detail. We’ll also cover missing values ​​(NaN) and how to deal with them. We want to prepare the data to feed the model.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="get-together.html" class="btn btn-neutral float-right" title="Joining the training and test datasets" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="dist-estatistic.html" class="btn btn-neutral float-left" title="Statistical distribution of data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2021, Paloma Sette.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
