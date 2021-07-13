@@ -6,7 +6,7 @@ From here, we can already test a hypothesis mentioned at the beginning: are wome
 
 
 .. image:: images/_4.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 
@@ -16,7 +16,7 @@ From the chart above, we have already been able to confirm two initial assumptio
 * Passengers in 3rd Class have less than half the chance of escaping disaster than passengers in 1st Class.
 
 .. image:: images/_5.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 
@@ -25,7 +25,7 @@ Looking also at the age distribution of survivors and dead, we can see a peak on
 We can take advantage of an interesting type of graphic from Pandas, the scatter_matrix.
 
 .. image:: images/_6.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 
@@ -33,7 +33,7 @@ We can see that the advantage of using this graph is that we get a very useful i
 
 
 .. image:: images/_7.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 

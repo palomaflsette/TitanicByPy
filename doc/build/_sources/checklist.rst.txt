@@ -121,7 +121,7 @@ We already know what each column represents, so let's take a look at the first e
 Cabin information has the most missing information, with more than 77%. Afterwards, the Age column has no value in almost 20% of passengers. Finally, the column informing the Port of Embarkation (Embarked) has only 2% of missing information.
 
 .. image:: images/_1_.png
-    :width: 900
+    :width: 700
     :alt: Alternative text
 
 .. toctree::

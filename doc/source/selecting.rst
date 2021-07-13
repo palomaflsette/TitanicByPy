@@ -9,7 +9,7 @@ As with any real world dataset, we will always come across data that won't do an
 because apparently they don't seem relevant.
 
 .. image:: images/_10.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 

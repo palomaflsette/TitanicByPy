@@ -3,11 +3,11 @@ Regression and Logistics Model
 ===============================
 
 .. image:: images/_15.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 .. image:: images/_16.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 **With practically two lines, we built a Logistic Regression model with 80% accuracy of the training dataset.**
@@ -17,7 +17,7 @@ The *.fit()* method optimizes the objective function of the problem and stores t
 We can predict the test dataset with the .predict() method.
 
 .. image:: images/_17.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 

@@ -6,7 +6,7 @@ Investigating the Wreck of the RMS Titanic
 ==========================================
 
 .. image:: images/titanic.jpg
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 Certainly, most people know the story behind the wreck of what would be the most modern ship in the world at the time. Despite the available technology, after colliding with an iceberg on April 15, 1912, its wreckage killed 1502 people out of a total of 2224 passengers.

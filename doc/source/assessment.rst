@@ -7,7 +7,7 @@ Since the model is already trained and with good accuracy, I thought it might be
 Let's then create five models containing the values ​​of each variable and pass them as arguments to the predict() method.
 
 .. image:: images/_22.png
-    :width: 700
+    :width: 600
     :alt: Alternative text
 
 

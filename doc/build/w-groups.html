@@ -100,7 +100,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="checklist.html#data-preparation">Data Preparation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="checklist.html#modeling">Modeling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="checklist.html#data-modeling">Data Modeling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="checklist.html#assessment">Assessment</a></li>
 </ul>
 </li>
@@ -176,18 +176,18 @@
   <div class="section" id="which-groups-of-people-were-most-likely-to-survive">
 <h1>Which groups of people were most likely to survive?<a class="headerlink" href="#which-groups-of-people-were-most-likely-to-survive" title="Permalink to this headline">¶</a></h1>
 <p>From here, we can already test a hypothesis mentioned at the beginning: are women, in fact, more likely to survive the sinking of the Titanic? It is worth looking at the correlations and relationships between the variables, whether to decide which ones will go into a future model or to formulate new hypotheses.</p>
-<a class="reference internal image-reference" href="_images/_4.png"><img alt="Alternative text" src="_images/_4.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="_images/_4.png"><img alt="Alternative text" src="_images/_4.png" style="width: 600px;" /></a>
 <p>From the chart above, we have already been able to confirm two initial assumptions:</p>
 <ul class="simple">
 <li><p>Women are much more likely to survive than men (75% vs. 18%);</p></li>
 <li><p>Passengers in 3rd Class have less than half the chance of escaping disaster than passengers in 1st Class.</p></li>
 </ul>
-<a class="reference internal image-reference" href="_images/_5.png"><img alt="Alternative text" src="_images/_5.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="_images/_5.png"><img alt="Alternative text" src="_images/_5.png" style="width: 600px;" /></a>
 <p>Looking also at the age distribution of survivors and dead, we can see a peak on the survivors side for young children. The behavior of the two graphics is very similar, but this detail is very important, as it confirms the hypothesis that children also have a greater chance of surviving: <em>“Children and women first!”</em>.</p>
 <p>We can take advantage of an interesting type of graphic from Pandas, the scatter_matrix.</p>
-<a class="reference internal image-reference" href="_images/_6.png"><img alt="Alternative text" src="_images/_6.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="_images/_6.png"><img alt="Alternative text" src="_images/_6.png" style="width: 600px;" /></a>
 <p>We can see that the advantage of using this graph is that we get a very useful information of its diagonal, which displays a histogram of each attribute. So we can see things like, for example, the fact that older people are more concentrated in first grade and younger people are more concentrated in third grade. Finally, finishing this first exploratory analysis step, we can analyze the heatmap to understand how the variables are correlated, positively or negatively.</p>
-<a class="reference internal image-reference" href="_images/_7.png"><img alt="Alternative text" src="_images/_7.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="_images/_7.png"><img alt="Alternative text" src="_images/_7.png" style="width: 600px;" /></a>
 <p>Another interesting thing is that the df.describe() method can also be used to visualize something about descriptive statistics in columns that are not numbers. To do this, just pass the include=[‘O’] argument.</p>
 <a class="reference internal image-reference" href="_images/_8.png"><img alt="Alternative text" src="_images/_8.png" style="width: 600px;" /></a>
 <p>From these data, we can note that:</p>
